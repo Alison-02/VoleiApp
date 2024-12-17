@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/teams_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumo dos Times"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Título Resumo dos Times" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="Lista de jogadores nos times sorteados">
+
+        <LinearLayout
+            android:id="@+id/teams_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Jogadores adicionados dinamicamente -->
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/share_teams_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar Times"
+        android:contentDescription="Botão para compartilhar os times sorteados" />
+</LinearLayout>
